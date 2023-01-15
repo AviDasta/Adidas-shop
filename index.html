@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>adidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--                start nav bar                -->
+    <nav class="nav-container bg-black container-fluid text-white">
+
+        <div class="row">
+            <!--         nav adidas logo             -->
+            <img class="nav-logo col-md-2 img-fluid" style="height: 80px; width: 90px;" src="/image/logo.png" alt="">
+            <!--         nav left                    -->
+            <p class="nav-left col-3 text-end p-4 d-md-block d-none">
+                BUY MORE, SAVE MORE W/CODE: SAVEMORE
+            </p>
+            <!--         nav center                  -->
+            <p class="nav-center col-4 text-center p-4 d-md-block d-none">
+                FREE STANDARD SHIPPING & RETURNS | JOIN NOW
+            </p>
+            <!--         nav right                   -->
+            <p class="nav-right col-3 text-end p-4 d-md-block d-none">
+                SCORE MOM A $50 GIFT CARD FOR $40
+            </p>
+            <!--         hamburger                   -->
+            <i class="fa-solid fa-bars d-md-none col-9 text-end p-4"></i>
+        </div>
+    </nav>
+    <!--               start header container -->
+    <header class="header-container container-fluid text-md-start text-center">
+        <div class="container">
+            <div class="row">
+                <!--        header left side      -->
+                <div class="header-left col-md-8 p-5 ">
+                    <h1>YOUR BAG</h1>
+                    <h4>TOTAL<span class="total-price"></span></h4>
+                    <p>Items in your bag are not reserved - check out now to make them yours.
+                    </p>
+                    <!--      left side gray div    -->
+                    <div class="sell-container bg-secondary p-5">
+                        <h2>BUY MORE SAVE MORE</h2>
+                        <p>20% off $50+, 25% off $125+, or 30% off $200+. Use Code: SAVEMORE. Sale Ends 5/10.</p>
+                        <a href="shop">SHOP THE SALE</a>
+                    </div>
+                    <!--      left side border      -->
+                    <div class="img-input row mt-5 border border-dark" id="first-div">
+                        <div class="image col-md-5">
+                            <img class="img-fluid" src="/image/orange shirt.webp" alt="">
+                        </div>
+                        <div class="text-input col-md-7 p-4 d-flex flex-column align-content-between ">
+                            <p>ADICOLOR ESSENTIALS TREFOIL HOODIE BRIGHT<span class="text-danger price-item"> 55</span>$ <span><button id="x-button-one"> X</button></span></p>
+                            <p>SIZE: S (US Men)</p>
+                            <input style="width: 100px;" class="input-count p-3" type="number">
+                        </div>
+                    </div>
+                    <!--           image first item     -->
+                    <div class="img-input row mt-5 border border-dark" id="second-div">
+                        <div class="image col-md-5">
+                            <img class="img-fluid" src="/image/whiteshirt.webp" alt="">
+                        </div>
+                        <div class="text-input col-md-7 p-4 d-flex flex-column align-content-between ">
+                            <p>
+                                BADGE OF SPORT TEE MORE WHITE BRIGHT WHITE<span class="text-danger price-item"> 25</span>$<span><button id="x-button-two"> X</button></span></p>
+                            <p>SIZE: S (US Men)</p>
+                            <input style="width: 100px;" class="input-count p-3" type="number">
+                        </div>
+                    </div>
+                    <!--           image second item     -->
+                    <div class="img-input row mt-5 border border-dark" id="third-div">
+                        <div class="image col-md-5">
+                            <img class="img-fluid" src="/image/blackshirt.webp" alt="">
+                        </div>
+                        <div class="text-input col-md-7 p-4 d-flex flex-column align-content-between ">
+                            <p>
+                                BADGE OF SPORT TE BLACK/WHITE BRIGHT BLACK<span class="text-danger price-item"> 25</span>$<span><button id="x-button-three"> X</button></span></p>
+                            <p>SIZE: S (US Men)</p>
+                            <input style="width: 100px;" class="input-count p-3" type="number">
+                        </div>
+                    </div>
+                    <!--           image third item     -->
+                    <div class="img-input row mt-5 border border-dark" id="fourth-div">
+                        <div class="image col-md-5">
+                            <img class="img-fluid" src="/image/shoes.webp" alt="">
+                        </div>
+                        <div class="text-input col-md-7 p-4 d-flex flex-column align-content-between ">
+                            <p>ZG21 MOTION RECYCLED POLYSTER GOLF SHOES<span class="text-danger price-item"> 162</span>$<span><button id="x-button-four"> X</button></span></p>
+                            <p>SIZE: 10.5 (US Men)</p>
+                            <input style="width: 100px;" class="input-count p-3" type="number">
+                        </div>
+                    </div>
+                    <!--           image fourth item     -->
+                    <div class="two-divs-black-white mt-md-5 row mt-5">
+                        <button style="width: 350px;" class="bg-black text-white text-start p-3 col-5 text-end">CHACKOUT<span class="p-4"><i class="fa-solid fa-right-long"></i></span></button>
+                        <P class="text-center p-2 col-1 text-center">OR</P>
+                        <button style="width: 350px;" class="bg-white p-3 text-start col-5 text-end">Pay-Pal <span class="p-5"><i class="fa-solid fa-right-long"></i></span></button>
+
+                    </div>
+                </div>
+                <!--                chack out and pay pal divs    -->
+                <div class="header-right col-md-4 mt-md-5 p-5 text-md-start text-center">
+                    <a href="" class="p-md-5 text-black">LOGIN AND CHECKOUT FASTER</a>
+                    <div class="two-divs-black-white mt-md-5 d-md-block d-none">
+                        <button style="width: 350px;" class="bg-black text-white text-start p-3">CHACKOUT<span class="p-4"><i class="fa-solid fa-right-long"></i></span></button>
+                        <P class="text-center p-2">OR</P>
+                        <button style="width: 350px;" class="bg-white p-3 text-start">Pay-Pal <span class="p-5"><i class="fa-solid fa-right-long"></i></span></button>
+
+                    </div>
+                    <!--              all deatails price                 -->
+                    <div class="p-5 mt-md-5 row border border-md-dark">
+                        <h3>ORDER SUMMARY</h3>
+                        <div class="text col-6">
+
+
+                            <p>ITEMS:</p>
+                            <p>DELIVERY:</p>
+                            <p>Sales Tax:</p>
+                            <button id="total-button">TOTAL PRICE:</button>
+
+                        </div>
+                        <div class="price col-6 text-end">
+                            <p><span class="total-items"></span>?</p>
+                            <p>FREE</p>
+                            <p>-</p>
+                            <p class="fw-bolder"><span id="total-items"></span>$</p>
+                        </div>
+                    </div>
+                    <!--                     sale price                 -->
+                    <div class="p-5 mt-md-5 row border border-md-dark">
+                        <h3>SALE PRICE</h3>
+                        <div class="text col-6">
+
+
+                            <p>ITEMS:</p>
+                            <p>DELIVERY:</p>
+                            <p>Sales Present:</p>
+                            <button id="sale-button">SALE PRICE:</button>
+
+                        </div>
+                        <div class="price col-6 text-end">
+                            <p><span class="total-items"></span>?</p>
+                            <p>FREE</p>
+                            <p>25%</p>
+                            <p><span id="total-items"></span>$</p>
+                        </div>
+                    </div>
+                    <!--             last div help        -->
+                    <input style="width: 300px;" class="enter-input p-3 mt-md-5 mt-4" type="text" placeholder="Enter your promo code">
+                    <div class="href-right mt-5 ">
+                        <a class="text-black" href="">VERIFICATION BY ID.ME</a>
+                        <h5>NEED HELP?</h5>
+                        <a href="">Shipping</a>
+                        <a href="">Returns & Exchanges</a>
+                        <p>ACCEOTER PAYMENT METHODS</p>
+                        <div class="pay-images img-fluid">
+                            <img style="width: 350px;" src="/image/1.webp" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+</body>
+<script src="app.js"></script>
+
+</html>
